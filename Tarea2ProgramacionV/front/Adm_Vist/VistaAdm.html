@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    
+    <title>ADM REG</title>
+
+</head>
+<body>
+    
+    <Header>
+       <h1>Ingreso de administradores</h1> 
+    </Header>
+
+    <div class="container">
+        <h3>Login Administradores</h3>
+        <form id="loginForm" action="/login" method="POST">
+            <input type="text" name="user" placeholder="Usuario" required>
+            <input type="password" name="pass" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+        </form>
+        <div id="mensaje"></div>
+    </div>
+
+    <script >
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const user = this.user.value.trim();
+    const pass = this.pass.value.trim();
+    const mensajeDiv = document.getElementById('mensaje');
+
+    if (!user || !pass) {
+        mensajeDiv.textContent = 'Por favor, completa todos los campos.';
+        mensajeDiv.style.color = 'red';
+        return;
+    }
+
+    const admins = [
+        { user: "Geiler", pass: "1234" },
+        { user: "Juan", pass: "5678" },
+        { user: "Alan", pass: "abcd" },
+        { user: "Luis", pass: "efgh" }
+    ];
+
+    const valido = admins.some(a => a.user === user && a.pass === pass);
+
+    if (valido) {
+        mensajeDiv.textContent = `Bienvenido ${user}`;
+        mensajeDiv.style.color = 'green';
+        window.open('pagina_vacia.html');
+        
+    } else {
+        mensajeDiv.textContent = 'Usuario o contraseña incorrectos.';
+        mensajeDiv.style.color = 'red';
+    }
+});
+    </script>
+    
+</body>
+</html>
