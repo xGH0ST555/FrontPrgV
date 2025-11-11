@@ -1,0 +1,376 @@
+body {
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../images/ChatGPT\ Image\ 6\ sept\ 2025\,\ 21_56_02-fotor-20250907111058.png);
+}
+
+header {
+     background-color: #dfa457;
+    color: #ffffff;
+    padding: 70px 0;
+    text-align: center;
+    font-size:35px ;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+   border-radius:5px ;
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+main {
+    flex: 2;
+    padding: 30px;
+    background: rgba(54, 40, 40, 0.185); /* más transparente */
+    border-radius: 1px;
+   /* box-shadow: 0 2px 5px rgba(97, 78, 78, 0.349);*/
+    backdrop-filter: blur(8px); /* efecto vidrio */
+    -webkit-backdrop-filter: blur(8px);
+}
+form {
+   background: rgba(17, 16, 16, 0.438); /* más transparente */
+    padding: 20px;
+    color: white;
+    font-size: medium;
+    width: 40;
+    height: 40;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.247);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+}
+form input[type="text"],
+form input[type="date"],
+form input[type="time"],
+form textarea {
+    
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /**/
+    display: inline-block;
+    width: calc(100% - 60px); /* Ajusta según el ancho del label */
+    vertical-align: middle;
+    margin-bottom: 10px;
+    }
+
+
+form input[type="submit"] {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+   
+}
+
+form input[type="submit"]:hover {
+    background: #45a049;
+}
+
+.button agendar-event{
+    font: bold;
+}
+
+
+.event-list {
+    margin-top: 20px;
+}
+
+.event-item {
+    background: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.button.agendar-event {
+    background-color: #4CAF50; 
+    justify-content: center;/* Green */
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    font: bold;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.event-name {
+    color : white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.event-date {
+    color : white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.event-time {
+    color : white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.event-type {
+    color : white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.row.align-items-start {
+    align-items: center;
+}
+
+#event-list {
+    list-style: none;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+#event-list li {
+  background-color: #dfa457; /* color dorado translúcido */
+    color: #fff;
+    border-left: 15px solid #35424a; /* azul oscuro del botón */
+    margin-bottom: 20px;
+    padding: 20px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(54, 40, 40, 0.15);
+    font-size: 1.20em;
+    font: bold;
+    transition: background 0.2s;
+}
+
+#event-list li:hover {
+    background: #35424a; /* azul oscuro al pasar el mouse */
+    color: #dfa457;      /* dorado para el texto */
+}
+/* Estilos para el select del tipo de evento */
+
+
+select#event-type {
+    width: 96%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #dfa457; /* dorado suave */
+    background: white; /* fondo dorado translúcido */
+    color: #35424a; /* azul oscuro */
+    font-size: 1em;
+    margin-bottom: 12px;
+    transition: border 0.2s, background 0.2s;
+}
+
+select#event-type:focus {
+    border-color: #35424a; /* azul oscuro al enfocar */
+    background:white;
+    outline: none;}
+ 
+    /*STILOS EXTRA*/
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #dfa457);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .container-form {
+           /* background: white;*/
+           /* padding: 30px;*/
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .container-form h2{
+            color: white;
+            font-size: 50px;
+            justify-content: align-items ;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            font-weight: 600;
+            color: white;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+        
+        input[type="text"],
+        select {
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        
+        input[type="text"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        button[type="submit"] {
+            padding: 12px 20px;
+            background: linear-gradient(#dfa457);
+            color: black;
+            border: none;
+            border-radius: 4px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        button[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        
+        .container-lista {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .container-lista h2 {
+            color: black;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        
+        #event-list {
+            list-style: none;
+        }
+         #event-list p {
+            color: black
+        }
+        .evento-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #f9f9f9;
+            border-left: 4px solid #667eea;
+            margin-bottom: 12px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .evento-item:hover {
+            background: #f0f0f0;
+        }
+        
+        .evento-texto {
+            flex: 1;
+        }
+        
+        .evento-texto strong {
+            color: #333;
+            font-size: 1.1em;
+        }
+        
+        .evento-texto em {
+            color: #667eea;
+            font-style: normal;
+            font-weight: 500;
+        }
+        
+        .botones-accion {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn-editar,
+        .btn-eliminar {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .btn-editar {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .btn-editar:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 6px rgba(76, 175, 80, 0.3);
+        }
+        
+        .btn-eliminar {
+            background-color: #f44336;
+            color: white;
+        }
+        
+        .btn-eliminar:hover {
+            background-color: #da190b;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 6px rgba(244, 67, 54, 0.3);
+        }
+        
+        p {
+            text-align: center;
+            color: #999;
+            font-style: italic;
+        }

@@ -1,0 +1,86 @@
+body {
+    margin: 0;              /* Elimina el margen por defecto del body */
+    padding: 0;             /* Elimina el padding por defecto del body */
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #dfa457;
+    color: white;
+    text-align: center;
+    padding: 60px 0;         /* Solo padding arriba y abajo */
+    width: 100vw;            /* Ocupa todo el ancho de la ventana */
+    margin: 0;               /* Elimina márgenes por defecto */
+    box-sizing: border-box;  /* Incluye el padding en el ancho */
+    margin-bottom: 80px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 40px 0;     /* Reduce el padding en pantallas pequeñas */
+        font-size: 1.2em;    /* Ajusta el tamaño de fuente si es necesario */
+    }
+}
+h1 {
+    margin: 0;               /* Elimina el margen por defecto del h1 */
+    font-size: 2.5em;       /* Tamaño de fuente grande para el título */
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background: url(../Images/ChatGPT\ Image\ 6\ sept\ 2025\,\ 21_56_02-fotor-20250907111058.png);
+}
+.container {
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.25);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    max-width: 350px;           /* Reduce el ancho máximo */
+    margin: 40px auto;          /* Centra el container */
+    padding: 30px 20px;         /* Añade padding interno */
+    display: flex;
+    flex-direction: column;     /* Alinea hijos en columna */
+    align-items: stretch;       /* Estira los hijos al ancho del container */
+    border-radius: 12px;        /* Opcional: bordes redondeados */
+    background: rgba(255,255,255,0.15); /* Opcional: fondo semitransparente */
+}
+
+/* Asegura que los campos de texto y botones ocupen todo el ancho y estén alineados */
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"],
+.container button,
+.container select,
+.container textarea {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.container button {
+    background-color: #dfa457;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.container button:hover {
+    background-color: #b97c2e;
+}
+.league-spartan {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+h3 {
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de eventos</title>
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- Estilos adicionales para el CRUD -->
+ 
+</head>
+<body>
+    
+    <header>
+        <h1>📅 Administrador de Eventos</h1>
+    </header>
+    
+    <main>
+        <!-- SECCIÓN: FORMULARIO PARA CREAR/EDITAR EVENTOS -->
+        <div class="container-form">
+           <center> <h2>Registra Evento</h2></center>
+            <form id="event-form">
+                <!-- Campo: Nombre del evento -->
+                <div class="form-group">
+                    <label for="event-name">Nombre del evento:</label>
+                    <input type="text" id="event-name" name="event-name" placeholder="Ej: Concierto de Jazz" required>
+                </div>
+                
+                <!-- Campo: Fecha -->
+                <div class="form-group">
+                    <label for="event-date">Fecha:</label>
+                    <input type="text" id="event-date" name="event-date" placeholder="Ej: 2025-12-15" required>
+                </div>
+                
+                <!-- Campo: Hora -->
+                <div class="form-group">
+                    <label for="event-time">Hora:</label>
+                    <input type="text" id="event-time" name="event-time" placeholder="Ej: 19:30" required>
+                </div>
+                
+                <!-- Campo: Tipo de Evento -->
+                <div class="form-group">
+                    <label for="event-type">Tipo de Evento:</label>
+                    <select id="event-type" name="event-type" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="Comida">Comida</option>
+                        <option value="Concierto">Concierto</option>
+                        <option value="Exhibición">Exhibición</option>
+                        <option value="Taller de Artes">Taller de Artes</option>
+                        <option value="Teatro">Teatro</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+                
+                <!-- Botón enviar -->
+                <button type="submit">Agregar Evento</button>
+            </form>
+        </div>
+        
+        <!-- SECCIÓN: LISTA DE EVENTOS -->
+        <div class="container-lista">
+            <h2>📋 Eventos Programados</h2>
+            <ul id="event-list"></ul>
+        </div>
+    </main>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
