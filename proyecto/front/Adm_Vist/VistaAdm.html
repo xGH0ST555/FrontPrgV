@@ -28,6 +28,7 @@
     </div>
 
     <script >
+        
         document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -53,7 +54,7 @@
     if (valido) {
         mensajeDiv.textContent = `Bienvenido ${user}`;
         mensajeDiv.style.color = 'green';
-        window.open('../admin-eventos/src/eventos.html');
+        window.open('/front/admin-eventos/src/eventos.html','eventos');
         
     } else {
         mensajeDiv.textContent = 'Usuario o contraseña incorrectos.';
