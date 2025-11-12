@@ -1,0 +1,230 @@
+header {
+    background-color: #000000;
+    color: #ffffff;              /* Asegura que el texto sea blanco */
+    padding: 160px;
+    text-align: center;          /* Centra el texto */
+    font-family: Arial, sans-serif;
+    
+    margin-bottom: 1rem;
+}
+
+h1.Encabezado {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+.card-hover {
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.card-hover:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    z-index: 2;
+   
+}
+.card-img-top {
+    height: 140px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    background-color: #e9ecef;
+}
+
+.container {
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem; 
+}
+
+
+.fondo-header {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+
+.fondo-tarjetas {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.seccion {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #000000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 2rem;
+}
+
+.fondo-explora {
+    background-image: url('');
+}
+.fondo-lugares {
+    background-image: url('');
+}
+.fondo-sabor {
+    background-image: url('');
+}
+.fondo-baldosa {
+    background-image: url('');
+}
+.fondo-eventos {
+    background-image: url('');
+    
+}
+
+/* Footer con imagen de fondo */
+.fondo-footer {
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.card-img-top
+{gap: 50;}
+
+@media (max-width: 768px) {
+    .container,
+    .seccion,
+    .fondo-tarjetas {
+        padding: 1rem !important;
+    }
+    h1.Encabezado {
+        font-size: 1.5em;
+    }
+    .card-img-top {
+        height: 140px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .card-body h2 {
+        font-size: 1em;
+    }
+    .card-body p {
+        font-size: 0.9em;
+    }
+    .card-img-top {
+        height: 120px;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 2em;
+}
+
+p, .card-text {
+    font-size: 1.1em;
+}
+
+@media (max-width: 992px) {
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+    p, .card-text {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    h1, h2, h3 {
+        font-size: 1.2em;
+    }
+    p, .card-text {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 576px) {
+    h1, h2, h3 {
+        font-size: 1em;
+    }
+    p, .card-text {
+        font-size: 0.9em;
+    }
+}
+
+
+/*Css de las card de los integrantes */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* animación suave */
+  cursor: pointer; /* cambia el cursor al pasar encima */
+}
+
+.card:hover {
+  transform: scale(1.1) translateY(-10px); 
+  /* scale(1.1) → aumenta un 10% 
+     translateY(-10px) → se mueve un poco hacia arriba */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3); 
+  /* sombra para dar efecto de elevación */
+}
+
+/*CSS ICONOS*/
+.social-icons {
+  display: flex;              /* los pone en fila */
+  justify-content: center;    /* los centra horizontalmente */
+  align-items: center;        /* los alinea verticalmente */
+  gap: 2rem;                  /* espacio entre los íconos */
+  list-style: none;           /* elimina viñetas de la lista */
+  padding: 10;
+  margin: 10;
+}
+
+.social-icons .icon {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons .icon:hover {
+  transform: scale(1.2); /* efecto zoom al pasar el mouse */
+}
+.container{
+    box-shadow:  20px 20px 50px rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 15px;
+    margin-top: 30px;
+    
+
+}
+body{
+    background: url('../images/pexels-mitchel3uo-5607006.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.tx{
+    text-align: justify;
+    margin: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.cali-img{
+    text-align: center;
+    margin: 60px;
+    
+   
+}
